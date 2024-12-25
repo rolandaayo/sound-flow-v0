@@ -9,24 +9,36 @@ const Hero = () => {
   const slides = [
     {
       bgImage: "/images/bg-1.jpg",
-      title: "Welcome to SoundFlow",
-      subtitle: "Discover the future of music production",
+      title: "Get Your Music Everywhere",
+      subtitle: "Release your music on all platforms",
       primaryBtn: "Get Started",
       secondaryBtn: "Learn More",
+      font: "roboto-condensed",
+      subtitleFont: "roboto-condensed",
+      primaryBtnFont: "montserrat",
+      secondaryBtnFont: "montserrat",
     },
     {
       bgImage: "/images/bg-3.jpg",
-      title: "Create Without Limits",
-      subtitle: "Professional tools for every creator",
+      title: "Artist Friendly, Data Driven",
+      subtitle: "Release your music & fund your career",
       primaryBtn: "Try Now",
       secondaryBtn: "View Features",
+      font: "roboto-condensed",
+      subtitleFont: "roboto-condensed",
+      primaryBtnFont: "montserrat",
+      secondaryBtnFont: "montserrat",
     },
     {
       bgImage: "/images/bg-2.jpg",
-      title: "Join the Community",
-      subtitle: "Connect with artists worldwide",
+      title: "Tailored deals & Artists Services",
+      subtitle: "Grow your fanbase and access flexible funding",
       primaryBtn: "Join Now",
       secondaryBtn: "Explore Community",
+      font: "roboto-condensed",
+      subtitleFont: "roboto-condensed",
+      primaryBtnFont: "montserrat",
+      secondaryBtnFont: "montserrat",
     },
   ];
 
@@ -81,7 +93,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight"
+            className="font-roboto-condensed text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight"
           >
             {slides[currentSlide].title}
           </motion.h1>
@@ -94,7 +106,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-[90%] mx-auto"
+            className="font-roboto-condensed text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-[90%] mx-auto"
           >
             {slides[currentSlide].subtitle}
           </motion.p>

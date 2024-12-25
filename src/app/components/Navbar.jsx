@@ -46,9 +46,6 @@ const Navbar = () => {
               {[
                 ["Get Started", "/get-started"],
                 ["Pricing", "/pricing"],
-                ["Label", "/label"],
-                ["Partners", "/partners"],
-                ["How To", "/how-to"],
                 ["Dream Factory", "/dream-factory"],
               ].map(([title, href]) => (
                 <motion.div
@@ -131,16 +128,16 @@ const Navbar = () => {
                   />
                 </motion.div>
                 <motion.span
-                  className="ml-2.5 text-[20px] font-semibold text-[#FAE62F] tracking-[-0.2px]"
+                  className="ml-2.5 text-[20px] font-montserrat font-bold text-[#FAE62F] tracking-[-0.2px]"
                   whileHover={{ color: "#ffffff" }}
                 >
-                  SoundFlow
+                  SOUNDFLOW
                 </motion.span>
               </Link>
             </motion.div>
 
             {/* Right Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden font-montserrat md:flex items-center gap-8">
               <Link
                 href="/resources"
                 className="text-[15px] text-gray-300 hover:text-white font-normal tracking-[-0.15px] relative group"
