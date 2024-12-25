@@ -1,24 +1,23 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "./components/CustomCursor";
-import BackgroundGradient from "./components/BackgroundGradient";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
-  title: "SoundFlow - Music Distribution Made Simple",
-  description:
-    "Release unlimited music to Spotify, Apple Music, and 200+ platforms.",
+  title: "SoundFlow",
+  description: "Music Distribution Platform",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
-        <BackgroundGradient />
-        <CustomCursor />
-        {children}
-      </body>
+    <html lang="en">
+      <head>
+        <link rel="preload" href="/images/bg-1.jpg" as="image" />
+      </head>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
