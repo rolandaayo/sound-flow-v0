@@ -1,5 +1,5 @@
 <div align="center">
-  <h2 align="center">Ecommerce Store</h2>
+  <h2 align="center">SoundFlow</h2>
 
   This is a fully responsive and functional ecommerce website, Responsive for all devices. <br/> Built using Next.js and TailwindCSS.
 
