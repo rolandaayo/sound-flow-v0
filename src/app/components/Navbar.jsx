@@ -35,8 +35,8 @@ const Navbar = () => {
       <motion.nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#1E1E1F]/95 backdrop-blur-md border-b border-gray-800/50"
-            : "bg-[#1E1E1F] border-b border-gray-800"
+            ? "bg-white/95 backdrop-blur-md border-b border-gray-200/50"
+            : "bg-white border-b border-gray-200"
         }`}
       >
         <div className="max-w-[1440px] mx-auto px-5 lg:px-10">
@@ -55,7 +55,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={href}
-                    className="text-[15px] text-gray-300 hover:text-white font-normal tracking-[-0.15px] relative group"
+                    className="text-[15px] text-gray-700 hover:text-black font-normal tracking-[-0.15px] relative group"
                   >
                     {title}
                     <motion.span
@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors duration-200"
+                className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-black hover:bg-gray-200/50 transition-colors duration-200"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
@@ -128,8 +128,8 @@ const Navbar = () => {
                   />
                 </motion.div>
                 <motion.span
-                  className="ml-2.5 text-[20px] font-montserrat font-bold text-[#FAE62F] tracking-[-0.2px]"
-                  whileHover={{ color: "#ffffff" }}
+                  className="ml-2.5 text-[20px] font-montserrat font-bold text-black tracking-[-0.2px]"
+                  whileHover={{ color: "#FAE62F" }}
                 >
                   SOUNDFLOW
                 </motion.span>
@@ -140,21 +140,21 @@ const Navbar = () => {
             <div className="hidden font-montserrat md:flex items-center gap-8">
               <Link
                 href="/resources"
-                className="text-[15px] text-gray-300 hover:text-white font-normal tracking-[-0.15px] relative group"
+                className="text-[15px] text-gray-700 hover:text-black font-normal tracking-[-0.15px] relative group"
               >
                 Resources
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FAE62F] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
                 href="/signin"
-                className="text-[15px] text-gray-300 hover:text-white font-normal tracking-[-0.15px] relative group"
+                className="text-[15px] text-gray-700 hover:text-black font-normal tracking-[-0.15px] relative group"
               >
                 Sign in
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FAE62F] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
                 href="/signup"
-                className="inline-flex items-center justify-center px-5 py-2.5 text-[15px] font-medium text-[#1E1E1F] bg-[#FAE62F] rounded-lg hover:bg-white transition-all duration-300 tracking-[-0.15px] shadow-lg shadow-[#FAE62F]/20"
+                className="inline-flex items-center justify-center px-5 py-2.5 text-[15px] font-medium text-black bg-[#FAE62F] rounded-lg hover:bg-white hover:border-2 hover:border-[#FAE62F] transition-all duration-300 tracking-[-0.15px] shadow-lg shadow-[#FAE62F]/20"
               >
                 Get Started
               </Link>
@@ -165,7 +165,7 @@ const Navbar = () => {
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } md:hidden absolute left-0 right-0 top-[72px] bg-[#1E1E1F]/95 backdrop-blur-md border-b border-gray-800/50`}
+            } md:hidden absolute left-0 right-0 top-[72px] bg-white/95 backdrop-blur-md border-b border-gray-200/50`}
           >
             <div className="px-5 py-4 space-y-3">
               {[
@@ -181,14 +181,14 @@ const Navbar = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="block px-3 py-2.5 text-[15px] font-normal text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 tracking-[-0.15px] transition-all duration-200"
+                  className="block px-3 py-2.5 text-[15px] font-normal text-gray-700 hover:text-black rounded-lg hover:bg-gray-200/50 tracking-[-0.15px] transition-all duration-200"
                 >
                   {title}
                 </Link>
               ))}
               <Link
                 href="/signup"
-                className="block px-3 py-2.5 text-[15px] font-medium text-[#1E1E1F] bg-[#FAE62F] rounded-lg hover:bg-white tracking-[-0.15px] transition-all duration-200"
+                className="block px-3 py-2.5 text-[15px] font-medium text-black bg-[#FAE62F] rounded-lg hover:bg-white hover:border-2 hover:border-[#FAE62F] tracking-[-0.15px] transition-all duration-200"
               >
                 Get Started
               </Link>
