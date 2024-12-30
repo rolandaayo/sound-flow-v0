@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Body() {
   return (
-    <div>
+    <div className="font-montserrat">
       {/* Hero Section */}
       <section className="hero bg-gradient-to-r from-purple-600 to-blue-500 text-white py-20">
         <div className="container mx-auto px-6 text-center">

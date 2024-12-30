@@ -13,8 +13,8 @@ const Hero = () => {
       subtitle: "Release your music on all platforms",
       primaryBtn: "Get Started",
       secondaryBtn: "Learn More",
-      font: "roboto-condensed",
-      subtitleFont: "roboto-condensed",
+      font: "montserrat",
+      subtitleFont: "montserrat",
       primaryBtnFont: "montserrat",
       secondaryBtnFont: "montserrat",
     },
@@ -24,8 +24,8 @@ const Hero = () => {
       subtitle: "Release your music & fund your career",
       primaryBtn: "Try Now",
       secondaryBtn: "View Features",
-      font: "roboto-condensed",
-      subtitleFont: "roboto-condensed",
+      font: "montserrat",
+      subtitleFont: "montserrat",
       primaryBtnFont: "montserrat",
       secondaryBtnFont: "montserrat",
     },
@@ -35,8 +35,8 @@ const Hero = () => {
       subtitle: "Grow your fanbase and access flexible funding",
       primaryBtn: "Join Now",
       secondaryBtn: "Explore Community",
-      font: "roboto-condensed",
-      subtitleFont: "roboto-condensed",
+      font: "montserrat",
+      subtitleFont: "montserrat",
       primaryBtnFont: "montserrat",
       secondaryBtnFont: "montserrat",
     },
@@ -94,7 +94,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="font-roboto-condensed text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight"
+              className="font-montserrat text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight"
             >
               {slides[currentSlide].title}
             </motion.h1>
@@ -107,7 +107,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-              className="font-roboto-condensed text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-[90%] mx-auto"
+              className="font-montserrat text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-[90%] mx-auto"
             >
               {slides[currentSlide].subtitle}
             </motion.p>
@@ -138,7 +138,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="w-full sm:w-auto px-8 py-3 bg-purple-600 text-white rounded-lg font-medium 
                        text-base sm:text-lg hover:bg-purple-700 transition-colors duration-300 
-                       shadow-lg shadow-purple-600/20"
+                       shadow-lg shadow-purple-600/20 font-montserrat"
             >
               {slides[currentSlide].primaryBtn}
             </motion.button>
@@ -166,7 +166,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="w-full sm:w-auto px-8 py-3 bg-white/10 backdrop-blur-sm text-white rounded-lg 
                        font-medium text-base sm:text-lg hover:bg-white/20 transition-colors duration-300 
-                       shadow-lg shadow-black/20"
+                       shadow-lg shadow-black/20 font-montserrat"
             >
               {slides[currentSlide].secondaryBtn}
             </motion.button>
@@ -245,8 +245,8 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Platform</h2>
-            <p className="text-xl mb-8">
+            <h2 className="text-3xl font-bold text-center mb-12 font-montserrat">Why Choose Our Platform</h2>
+            <p className="text-xl mb-8 font-montserrat">
               Get your music heard worldwide with our comprehensive distribution service
             </p>
           </motion.div>
@@ -259,8 +259,8 @@ const Hero = () => {
               className="text-center p-6"
             >
               <div className="text-purple-600 text-4xl mb-4">🌎</div>
-              <h3 className="text-xl font-bold mb-2">Global Distribution</h3>
-              <p>Release your music on 150+ streaming platforms worldwide including Spotify, Apple Music, and more</p>
+              <h3 className="text-xl font-bold mb-2 font-montserrat">Global Distribution</h3>
+              <p className="font-montserrat">Release your music on 150+ streaming platforms worldwide including Spotify, Apple Music, and more</p>
             </motion.div>
 
             <motion.div
@@ -270,8 +270,8 @@ const Hero = () => {
               className="text-center p-6"
             >
               <div className="text-purple-600 text-4xl mb-4">📊</div>
-              <h3 className="text-xl font-bold mb-2">Analytics & Insights</h3>
-              <p>Track your performance with detailed analytics and get insights to grow your audience</p>
+              <h3 className="text-xl font-bold mb-2 font-montserrat">Analytics & Insights</h3>
+              <p className="font-montserrat">Track your performance with detailed analytics and get insights to grow your audience</p>
             </motion.div>
 
             <motion.div
@@ -281,8 +281,8 @@ const Hero = () => {
               className="text-center p-6"
             >
               <div className="text-purple-600 text-4xl mb-4">💰</div>
-              <h3 className="text-xl font-bold mb-2">Revenue Management</h3>
-              <p>Keep 100% of your royalties and get paid monthly with transparent earnings reports</p>
+              <h3 className="text-xl font-bold mb-2 font-montserrat">Revenue Management</h3>
+              <p className="font-montserrat">Keep 100% of your royalties and get paid monthly with transparent earnings reports</p>
             </motion.div>
           </div>
         </div>
