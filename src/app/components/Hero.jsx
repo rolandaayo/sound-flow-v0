@@ -136,9 +136,12 @@ const Hero = () => {
                 translateY: 0,
               }}
               whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto px-8 py-3 bg-[#FAE62F] text-[#1E1E1F] rounded-lg font-medium 
-                       text-base sm:text-lg hover:bg-white transition-colors duration-300 
-                       shadow-lg shadow-[#FAE62F]/20"
+
+
+
+              className="w-full sm:w-auto px-8 py-3 bg-purple-600 text-white rounded-lg font-medium 
+                       text-base sm:text-lg hover:bg-purple-700 transition-colors duration-300 
+                       shadow-lg shadow-purple-600/20"
             >
               {slides[currentSlide].primaryBtn}
             </motion.button>
@@ -182,7 +185,8 @@ const Hero = () => {
               whileTap={{ scale: 0.9 }}
               onClick={() => setCurrentSlide(index)}
               className={`w-2 sm:w-3 h-2 sm:h-3 rounded-full transition-all duration-500 ${
-                currentSlide === index ? "bg-[#FAE62F] w-6 sm:w-8" : "bg-white/50"
+
+                currentSlide === index ? "bg-purple-600 w-6 sm:w-8" : "bg-white/50"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -237,16 +241,20 @@ const Hero = () => {
       </div>
 
       {/* Features Section */}
-      <section className="py-20 bg-[#1E1E1F]">
-        <div className="container mx-auto px-4">
+
+
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-white mb-4">Why Choose Our Platform</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+
+
+            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Platform</h2>
+            <p className="text-xl mb-8">
               Get your music heard worldwide with our comprehensive distribution service
             </p>
           </motion.div>
@@ -256,51 +264,63 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-[#2A2A2B] p-8 rounded-xl"
+
+              className="text-center p-6"
             >
-              <div className="bg-[#FAE62F] w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">Global Distribution</h3>
-              <p className="text-gray-400">
-                Release your music on 150+ streaming platforms worldwide including Spotify, Apple Music, and more
-              </p>
+
+
+
+
+
+
+
+
+
+              <div className="text-purple-600 text-4xl mb-4">🌎</div>
+              <h3 className="text-xl font-bold mb-2">Global Distribution</h3>
+              <p>Release your music on 150+ streaming platforms worldwide including Spotify, Apple Music, and more</p>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-[#2A2A2B] p-8 rounded-xl"
+
+              className="text-center p-6"
             >
-              <div className="bg-[#FAE62F] w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">Analytics & Insights</h3>
-              <p className="text-gray-400">
-                Track your performance with detailed analytics and get insights to grow your audience
-              </p>
+
+
+
+
+
+
+
+
+
+              <div className="text-purple-600 text-4xl mb-4">📊</div>
+              <h3 className="text-xl font-bold mb-2">Analytics & Insights</h3>
+              <p>Track your performance with detailed analytics and get insights to grow your audience</p>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-[#2A2A2B] p-8 rounded-xl"
+
+              className="text-center p-6"
             >
-              <div className="bg-[#FAE62F] w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">Revenue Management</h3>
-              <p className="text-gray-400">
-                Keep 100% of your royalties and get paid monthly with transparent earnings reports
-              </p>
+
+
+
+
+
+
+
+
+
+              <div className="text-purple-600 text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-bold mb-2">Revenue Management</h3>
+              <p>Keep 100% of your royalties and get paid monthly with transparent earnings reports</p>
             </motion.div>
           </div>
         </div>
