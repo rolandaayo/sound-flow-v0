@@ -13,6 +13,8 @@
 
 ![Micro Desktop Demo](./readme-images/readme-1.png "Desktop Demo")
 
+💥 Sound Flow - A feature-rich music distribution platform built with the MERN stack, enabling artists to upload, manage, and distribute their music seamlessly across various channels.
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
