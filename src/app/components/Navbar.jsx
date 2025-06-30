@@ -160,7 +160,7 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FAE62F] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
-                href="/signup"
+                href="/sign-up"
                 className="inline-flex items-center justify-center px-5 py-2.5 text-[15px] font-medium text-black bg-[#FAE62F] rounded-lg hover:bg-white hover:border-2 hover:border-[#FAE62F] transition-all duration-300 tracking-[-0.15px] shadow-lg shadow-[#FAE62F]/20"
               >
                 Get Started
@@ -195,7 +195,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href="/signup"
+                href="/sign-up"
                 className="block px-3 py-2.5 text-[15px] font-medium text-black bg-[#FAE62F] rounded-lg hover:bg-white hover:border-2 hover:border-[#FAE62F] tracking-[-0.15px] transition-all duration-200"
               >
                 Get Started
