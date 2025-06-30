@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* Left Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {[
-                ["Get Started", "/get-started"],
+                ["Get Started", "/sign-up"],
                 ["Pricing", "/pricing"],
                 ["Dream Factory", "/dream-factory"],
               ].map(([title, href]) => (
@@ -153,6 +153,13 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FAE62F] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
+                href="/sign-up"
+                className="text-[15px] text-gray-700 hover:text-black font-normal tracking-[-0.15px] relative group"
+              >
+                Sign Up
+                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#FAE62F] transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/signup"
                 className="inline-flex items-center justify-center px-5 py-2.5 text-[15px] font-medium text-black bg-[#FAE62F] rounded-lg hover:bg-white hover:border-2 hover:border-[#FAE62F] transition-all duration-300 tracking-[-0.15px] shadow-lg shadow-[#FAE62F]/20"
               >
@@ -169,7 +176,7 @@ const Navbar = () => {
           >
             <div className="px-5 py-4 space-y-3">
               {[
-                ["Get Started", "/get-started"],
+                ["Get Started", "/sign-up"],
                 ["Pricing", "/pricing"],
                 ["Label", "/label"],
                 ["Partners", "/partners"],
@@ -177,6 +184,7 @@ const Navbar = () => {
                 ["Dream Factory", "/dream-factory"],
                 ["Resources", "/resources"],
                 ["Sign in", "/signin"],
+                ["Sign Up", "/sign-up"],
               ].map(([title, href]) => (
                 <Link
                   key={href}
