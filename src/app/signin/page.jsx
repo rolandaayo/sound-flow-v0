@@ -23,15 +23,21 @@ const SignInPage = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-lg">
         <div>
-          <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+          <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900">
+            Sign in to your account
+          </h2>
         </div>
         {submitted ? (
-          <div className="text-green-600 text-center font-semibold">Signed in! (Demo only)</div>
+          <div className="text-green-600 text-center font-semibold">
+            Signed in! (Demo only)
+          </div>
         ) : (
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
-                <label htmlFor="email" className="sr-only">Email address</label>
+                <label htmlFor="email" className="sr-only">
+                  Email address
+                </label>
                 <input
                   id="email"
                   name="email"
@@ -45,7 +51,9 @@ const SignInPage = () => {
                 />
               </div>
               <div>
-                <label htmlFor="password" className="sr-only">Password</label>
+                <label htmlFor="password" className="sr-only">
+                  Password
+                </label>
                 <input
                   id="password"
                   name="password"
@@ -70,7 +78,10 @@ const SignInPage = () => {
           </form>
         )}
         <div className="text-center text-sm text-gray-500 mt-4">
-          Don't have an account? <a href="/sign-up" className="text-[#FAE62F] hover:underline">Sign up</a>
+          Don't have an account?{" "}
+          <a href="/sign-up" className="text-[#FAE62F] hover:underline">
+            Sign up
+          </a>
         </div>
       </div>
     </div>
